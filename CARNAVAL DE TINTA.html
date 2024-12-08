@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnaval de Tinta - Danza</title>
+    <style>
+        body {
+            font-family: 'Bookman Old Style', serif; /* Fuente Bookman Old Style */
+            background-color: #f4f4f4; /* Fondo gris claro */
+            margin: 0;
+            padding: 0;
+            color: #2c3e50; /* Texto gris oscuro */
+            line-height: 1.5;
+        }
+        .container {
+            width: 90%;
+            margin: 40px auto;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Dos columnas */
+            gap: 20px;
+        }
+        /* Cuadro del título Carnaval de Tinta */
+        .encabezado {
+            background-color: #ff5690; /* Color principal: 255690 */
+            color: #fff; /* Texto blanco */
+            font-size: 2.2em;
+            font-weight: bold;
+            font-style: italic; /* Título en cursiva */
+            text-transform: uppercase;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            grid-column: span 2; /* Ocupa ambas columnas */
+        }
+        .section {
+            background: linear-gradient(135deg, #ff5690, #ffffff); /* Degradado de 255690 a blanco */
+            border-radius: 8px;
+            margin: 15px 0;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            font-size: 1.1em;
+        }
+        .section-title {
+            font-weight: bold;
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            text-align: center;
+            background: linear-gradient(135deg, #a3e0e8, #e0f7fa); /* Degradado de turquesa suave a blanco */
+            color: black; /* Texto negro */
+        }
+        .content {
+            background-color: #d1d1d1; /* Gris suave para los cuadros de texto */
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+        .content p {
+            margin: 8px 0;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+        .content span {
+            font-weight: bold;
+            color: #8e44ad; /* Morado */
+        }
+        .content strong {
+            color: #2980b9; /* Azul gris */
+        }
+        .content .resaltado-rojo {
+            color: #e74c3c; /* Rojo fuerte para resaltar */
+            font-weight: bold;
+        }
+        .content .resaltado-verde {
+            color: #27ae60; /* Verde brillante */
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr; /* En pantallas pequeñas solo una columna */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Título de la Danza Carnaval de Tinta -->
+        <div class="encabezado">
+            Carnaval de Tinta
+        </div>
+
+        <!-- Lugar de Procedencia -->
+        <div class="section">
+            <div class="section-title lugar">Lugar de Procedencia</div>
+            <div class="content">
+                <span>Región:</span> Cusco
+            </div>
+            <div class="content">
+                <span>Provincia:</span> Canchis
+            </div>
+            <div class="content">
+                <span>Distrito:</span> Tinta
+            </div>
+        </div>
+
+        <!-- Resumen -->
+        <div class="section">
+            <div class="section-title resumen">Resumen</div>
+            <div class="content">
+                El Carnaval de Tinta, celebrado en el Valle Alto de Vilcanota (Distrito de Tinta), es una fiesta de influencia andina que se celebra en febrero, siguiendo el calendario eclesiástico, y termina el miércoles de ceniza. La festividad tiene una fuerte influencia de las costumbres andinas, especialmente del <strong class="resaltado-rojo">"puqllay"</strong>, un rito precolombino, y en menor medida del carnaval europeo.
+            </div>
+        </div>
+
+        <!-- Aspectos Principales -->
+        <div class="section">
+            <div class="section-title danza">Aspectos Principales</div>
+            <div class="content">
+                <strong class="resaltado-rojo">Duración:</strong> Inicia en febrero (mes de los juegos) y finaliza en el miércoles de ceniza.
+            </div>
+            <div class="content">
+                <strong class="resaltado-rojo">Fiestas relacionadas:</strong> Durante el carnaval también se realizan ceremonias de marcación y señalamiento del ganado.
+            </div>
+            <div class="content">
+                <strong class="resaltado-rojo">Tema central:</strong> El enamoramiento entre jóvenes de la comunidad.
+            </div>
+        </div>
+
+        <!-- Danza -->
+        <div class="section">
+            <div class="section-title danza">Danza</div>
+            <div class="content">
+                <strong class="resaltado-rojo">Las pasñas y maqtas</strong> se visten con sus mejores trajes, siguen el ritmo de la música (bandurrias y charangos) y cantan canciones populares.
+            </div>
+            <div class="content">
+                <strong class="resaltado-rojo">Las pasñas</strong> usan warakas para castigar a sus galanes como una declaración de amor tácita.
+            </div>
+            <div class="content">
+                <strong class="resaltado-rojo">Los maqtas</strong> expresan su amor a través de cantos, que, si no son respondidos favorablemente, se convierten en cantos cómicos y picantes.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
